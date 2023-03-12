@@ -1,0 +1,24 @@
+{
+   "browser_action": {
+      "default_icon": {
+         "16": "images/16.png",
+         "32": "images/32.png",
+         "48": "images/48.ico"
+      },
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "https://next.voz.vn/t/*" ]
+   } ],
+   "description": "Tự động ưng hoặc gạch tất cả post trong 1 page \n  Ủng hộ nhà phát triển để có kinh phí phát hành phiên bản cao cấp thời gian tới",
+   "icons": {
+      "128": "images/logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzVTSt/h8anI9Qf0D6tsVrKSuz7iWMu5fGolBUe7s7VbjRnGzjrTBCLxXihyMD8z3+ZnQVp4h8a+/tYwhSLCz//GfASJrQOGHx91Mnd+ai8ynqdnm1t+W8YPNmCaBG/QZDab9636zW5bXJ007DIiV2pxc8jHbk5B5w0Z7lH8Xv0f8Wuiddqw4Gq0tcJOfnDFAPyBAa1W8a5ndKYPkbOuIsns7WMbWZvPB+UAqG66xPuPd/l2PL8QkB96jWnmP59c4mIBFe8dx3cmm6XnZEfv3UI65K4nRkJFLIZevL7rjnoDSBM5geEJ4OeWIx34tH7uNlSQx/jAE025hthiAyKyDZQIDAQAB",
+   "manifest_version": 2,
+   "name": "NextVOZ autoreaction",
+   "permissions": [ "activeTab", "https://next.voz.vn/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1"
+}
